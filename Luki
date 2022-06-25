@@ -1,0 +1,35 @@
+-- THIS LIBRARY IS NOT MADE BY ME
+-- LOADER
+local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Patskorn/GUI/main/Daino.lua"))()
+
+-- MAKE GUI
+local idk = GUI:new()
+
+-- MAKE WINDOW
+local win = idk:Tap("AGNAR HUB")
+
+-- MAKE TAB
+local tab = idk:Tap("Script1")
+
+-- MAKE BUTTON
+win:Button("button",function()
+    print("DinoNoob")
+end)
+
+-- MAKE TEXT
+win:Label("This is label")
+
+-- MAKE TOGGLE
+win:Toggle("toggle",false,function(TPHUB)
+print(TPHUB)
+end)
+
+-- MAKE SLIDER
+win:Slider("Slider",0,1000,400,function(t)
+print(t)
+end)
+
+-- MAKE DROPDOWN
+win:Dropdown("dropdown",{"Option 1","Option 2","Option 3","Option 4","Option 5"}, function(bool)
+print(bool)
+end)
